@@ -1,12 +1,9 @@
-#https://github.com/data-8/datascience
+from pkg_resources import VersionConflict, DistributionNotFound, \
+    require
+from ocw.test.test_local import create_netcdf_object
+from ocw.data_souce import local
+from ocw import dataste_processor as dsp
+import os 
+import six
 
-import matplotlib
-matplotlib.use('Agg')
-from datascience import Table
-import matplotlib.pyplot as plt
-import numpy as np
-plt.style.use('fivethirtyeight')
-
-
-Table.read_table("~/Documents/Comp312/hw1/CDPH_Environmental_Inspections.csv")
 
